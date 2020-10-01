@@ -1,0 +1,827 @@
+/*
+Author: Fiona Yang 
+Web design - final project - style
+2020-04-12
+*/
+/*--Font Awesome import--*/
+/*--Basic css--*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html {font: 100% 'Montserrat', Helvetica, Arial, sans-serif;}
+
+h2, section p {margin: 0 0 1.5rem 0;letter-spacing: 0.0075rem;}
+
+header {text-align: center; padding: 0.3rem 1rem;}
+
+h1,h2,h3, h4, .topnav {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+h3 {
+    color: #69585f;
+    font-size: 2rem;
+    margin: 0;
+    font-weight:600; 
+}
+
+p {font-size: 1.2rem; line-height: 1.5; }
+
+a {text-decoration: none;}
+
+body {
+    background-image: linear-gradient(to top , rgba(255,255,255,1), rgba(136,180,206,1));
+    background-repeat: no-repeat;
+}
+
+.line-1 {
+    border-top: 1px solid #b0b0aa;
+    width: 80%
+}
+
+/*---HEADER---*/
+header {
+    background-color: #689cbb;
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.logo h6 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0.8rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+header img {
+    width: 50px;
+    vertical-align: middle;
+}
+
+.main-logo h1 {
+    font-weight: 400;
+    font-size: 5rem;
+    margin: 1rem;
+}
+
+.main-logo h2 {
+    font-weight: 200;
+    font-size: 3.3rem;
+}
+
+.main-logo img {
+    width: 60px;
+}
+
+.small {
+    font-size: 75%;
+}
+
+
+/*NAV*/
+.topnav {
+    letter-spacing: 0.02rem;
+}
+
+nav {
+    flex-grow: 2;
+}
+
+.topnav a {
+    color: #fff;
+    padding: 0 0.5rem;
+    font-size: 1rem; 
+}
+
+/* Mobile NAV BURGER MENU */
+.icon {
+    display: none;
+}
+
+/*---Section Hero---*/
+.hero {
+    background-color: #689cbb;
+    background-image: linear-gradient(to top, rgba(104,156,187,0), rgba(104,156,187,1)), url(https://lufa0001.edumedia.ca/mtm1511/html/img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 5rem;
+}
+
+.slogan {
+    border: 3px solid;
+        width: 18rem;;
+        margin: auto;
+        font-size: 1.5rem;
+        padding: 1.2rem;
+}
+
+/*---Section Products---*/
+.products , .services {
+    background-color: #eaeae3;
+    display: grid;
+    grid-template-areas: 
+    'h3'
+    'p-bens'
+    'button-ora';
+   
+    text-align: center;
+    align-content: center;
+    padding: 3rem 0 4rem 0;
+}
+
+.gallery {
+    border-radius:50%;
+    background-color:#fff;
+    width: 300px;
+    height: auto;
+    margin: 4rem auto;
+}
+
+.gallery:hover {
+    background-color: azure;
+}
+
+.gallery img{
+    padding:2rem;
+}
+
+.button-ora, .button-order {
+    width: 18rem;
+    height: 3.8rem;
+    background-color: #ee6c4d;
+    border-radius:3rem;
+    text-align: center;
+    cursor: pointer;
+    padding: 1rem 3.8rem;
+    color: #fff;
+    text-decoration: none;
+    font-size:1.6rem;
+    letter-spacing: 0.1rem;
+}
+
+.button-ora:hover {
+    background-color: #ff7a0e;   
+}
+
+/*==PORDUCS PAGE==*/
+.price {
+    color: #333;
+}
+
+.price h6 {
+    font-size: 1.2rem;
+    margin: 0.8rem;
+}
+
+.gal-page .gallery {
+    background-color:#eaeae3;
+    margin: 1rem auto ;
+}
+
+.gal-page .gallery:hover {
+    background-color: #f4f4f2;
+}
+
+    /* PRODUCT-1 PAGE */
+.iterm {
+    text-align: left;
+    padding: 2rem;
+}
+
+.product-nav {
+    color: #888;
+    letter-spacing: 0.2rem;
+    padding-bottom: 4rem;
+}
+
+.product-nav a{
+    color: #555;
+}
+
+.product-nav a:last-child{
+    font-weight: 500;
+    color: #000;
+}
+
+.product-1{
+    text-align: center;
+}
+
+.product-1 h6{
+    font-size: 1.5rem;
+}
+
+.des {
+    padding: 1rem;
+}
+
+.des p {
+    text-align: left;
+}
+    
+.product-1 img {
+    margin: 1rem;
+}
+
+.others {
+    background-color: #fff;
+}
+
+.others h3{
+    font-size: 1.8rem;
+}
+    
+
+/*---Section Services---*/
+.services{
+    background-color: #fff; 
+    padding: 8rem 0 0 0; 
+}
+
+.service-order {
+    padding-bottom: 8rem;
+}
+
+.button-order {
+    background-color: #649ab5;
+}
+
+.button-order:hover {
+    background-color: #79b3d0;
+}
+
+.intro-studio {
+    background-color: #110b0e;
+    background-image: url(https://lufa0001.edumedia.ca/mtm1511/html/img/studio-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 3rem;
+    color: #fff;
+}
+
+.h4-b {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    line-height: 2;
+    padding-bottom: 8rem;
+}
+
+/*==PAGE OF ORDER AHEAD==*/
+
+.ser-page {
+    background-color:#fff;
+    display: grid;
+}
+
+/*=======FORM======*/
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.container select{
+    height: 33px; 
+}
+
+input[type=submit] {
+    background-color: #ee6c4d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #ff7a0e;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #eaeae3;
+    padding: 2rem;;
+    width: 80%;
+    margin: auto;
+    
+}
+/*==PAGE OF STUDIO==*/
+.studio-page {
+    background-color: #fff;
+}
+
+.studio-page .gallery {
+    margin: 1rem auto
+}
+
+.slogan-p {
+    font-family: 'Dancing Script', cursive, Arial, serif;
+    color: #c87242;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    margin: auto; 
+    padding-bottom: 2rem;
+}
+
+.events h4{
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.events hr {
+    width: 60%;
+    margin: 1rem auto;
+}
+
+/*---Section of Our Story---*/
+.story {
+    background-color: #49732f;
+    background-image: linear-gradient(to top, rgba(62,56,36,0), rgba(62,56,36,0.7)),url(https://lufa0001.edumedia.ca/mtm1511/html/img/story-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 3rem;
+    color: #fff;
+}
+
+.story a {
+    color: #fff;
+}
+
+.story h3 {
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+/*==PAGE OF STROY==*/
+.content {
+    padding: 2.8rem;
+    background-color: #fff;
+    
+}
+
+.content h4 {
+    font-size: 1.5rem;
+}
+
+
+/*------Section of CONTACT ------*/
+.contact {
+    text-align: center;
+    color: #564341;
+    padding: 5rem 3rem;
+    background-color: #fff;
+}
+
+.contact h4{
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+.contact .fas,.far {
+    color: #bcacae;
+    padding: 0.8rem;
+}
+
+.contact a {
+    color: #564341;
+    font-size: 1.2rem;
+}
+
+/*==PAGE OF CONTACT==*/
+.contact-page {
+    background-color: #60454b;
+    background-image: url(https://lufa0001.edumedia.ca/mtm1511/html/img/contact-bg.jpg);
+    background-repeat: no-repeat;
+    height: 400px;
+    background-size: cover;
+}
+
+.message-form {
+    background-color: #eaeae3;
+    text-align: center;
+}
+
+/*THIS FOR "THNEK YOU" TEXT*/
+.message-form h4 {
+    font-family: 'Dancing Script', cursive, Arial, serif;
+    color: #c87242;
+}
+
+.message-form .container{
+    width: 100%;
+    padding: 3rem 0;
+}
+
+
+/*---Footer Area---*/
+footer {
+    text-align: center;
+    color: #fff;
+}
+.social {
+    background-color: #60454b;
+    padding: 5rem 0;
+    margin: 0;
+}
+
+.social .fab {
+    color: rgba(255,255,255, 0.5);
+}
+
+footer a {
+    color: #fff;   
+}
+
+footer a:hover {
+    color: rgba(255,255,255, 0.8);
+}
+
+footer a {
+    padding: 0 1rem;
+}
+
+.footer {
+    background-color: #302a29;
+    font-size: 0.75rem; 
+    color:#ccc;
+    padding: 1rem;
+}
+
+
+
+/* This is for Responsive effect */
+
+/*----------MEDIA QUERIES-----------*/
+
+/*PHONES Up To 768px*/
+@media only screen and (max-width: 48em) {  
+    /*HEADER*/
+    header {
+        position: fixed;
+        top: 0px;
+        z-index: 999;
+        width: 100%;
+    }
+    
+    header, main {
+        margin: auto;
+    }
+    
+    /* HERO*/
+    .hero {
+        padding: 8rem 0; /* get more spaec to show main logo*/
+        width: 100%;
+    }
+    
+    /*Top NAV*/
+    .topnav {
+        display: none;
+    }
+    
+    a.icon {
+        float: right;
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-size: 1.6rem;
+    }
+    
+    .topnav.responsive {
+        position: absolute;
+        margin-top: 80px;
+        width: 100%;
+        right: 0;
+        top: 0;
+        padding: 10px 0;
+    }
+    
+    .responsive {
+        background-color: #fff;
+       
+    }
+       
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        color: #222;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+    
+    .topnav.responsive a:hover {
+        background-color: #69585f;
+        color: #fff;
+    }
+     
+   .topnav.responsive {
+       display: flex;
+    }
+    
+   .topnav.responsive {
+       display: block;
+   }
+       
+    /***PORDUCS--PAGE***/  
+    .gal-page .gallery {
+        background-color:#eaeae3;
+/*        margin: 3rem auto 8rem;*/
+    }
+    
+    .gal-page img {
+        width: 90%;
+    }
+    
+    .price {
+        margin: 1rem 0;
+    }
+    
+    .products {
+        padding-top: 8rem;
+    }
+
+    /***STORY--PAGE***/     
+    .story {
+        padding: 8rem 3rem; 
+    }
+}
+
+
+/* END OF LANDSCAPE PHONES AND PORTRAIT TABLET*/
+
+/*    RETINA LANDSCAPE TABLETS AND STANDARD DESKTOP*/
+@media only screen and (min-width: 50em) { 
+    /*---HEADER---*/
+    header img {
+        width: 50px;
+        vertical-align: middle;
+    }
+    
+    /*---HERO---*/
+    h3 {
+       font-size: 2.3rem; 
+    }
+    
+    .main-logo h1 {
+        font-weight: 400;
+        font-size: 4rem;
+        margin: 1rem;
+    }
+
+    .main-logo h2 {
+        font-weight: 200;
+        font-size: 2rem;
+        margin: 1rem;
+    }
+    
+    .hero img {
+        width: 60px;
+        padding-top: 3rem;
+    }
+    
+    .slogan {
+        border: 3px solid;
+        width: 18rem;;
+        margin: auto;
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+    
+    .hero {
+        background-image: linear-gradient(to top, rgba(104,156,187,0), rgba(104,156,187,1)), url(https://lufa0001.edumedia.ca/mtm1511/html/img/hero-landscape.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;  
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    /*---PORDUCS---*/
+    .p-bens {
+        margin: 2rem;
+    }   
+
+    .p-bens .gallery img {
+        width: 90%;
+    }
+    /*PORDUCS-PAGE*/
+    /*PRODUCT-1 PAGE*/
+    .product-1{
+        display: flex;
+        text-align: left;
+    }
+
+    .product-1 .price h5{
+        margin: 1rem;
+    }
+    
+    
+    /*---SERVICES---*/
+    .services {
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "title studio"
+            "order studio";
+    }
+    
+    .title {
+       grid-area: title;
+        padding-top: 5rem;
+    }
+    .service-order {
+        grid-area: order;
+    }
+    .intro-studio {
+        grid-area: studio; 
+    }
+    
+    
+    /*---STORY---*/
+    .story {
+        display: flex;
+        padding: 8rem 5rem; 
+    }
+    
+    .story p {
+        padding-right: 2rem; 
+        line-height: 2rem;
+    }
+    
+    .story h3{
+        padding: 0 3rem;
+    }
+    
+    /*==PAGE OF STROY==*/
+    .content {
+        margin: auto;
+        padding: 3rem 10rem 6rem;
+    }
+    
+    /*---CONTACT---*/
+    .contact .far, .fas {
+        font-size: 3rem;
+    }
+    
+    /*---FOOTER---*/
+    footer img {
+        width: 50px;
+        vertical-align: middle;
+    }
+
+    footer .main-logo h1 {
+        font-weight: 400;
+        font-size: 3rem;
+        margin: 0.3trm;
+    }
+
+    footer .main-logo h2 {
+        font-weight: 200;
+        font-size: 2rem;
+        margin: 1rem;
+    }
+    
+    .footer p{
+        font-size: 1rem;
+    }
+    
+    .social .fab {
+        font-size: 3rem;
+    }
+    
+}
+/* END OF---RETINA LANDSCAPE TABLETS AND STANDARD DESKTOP*/
+
+/*RETINA LANDSCAPE TABLETS AND STANDARD DESKTOP*/
+@media only screen and (min-width: 60em) { 
+    /* NAV */
+    .topnav a {
+        padding: 0 0.8rem;
+        font-size: 1.2rem;  
+    }
+    
+   /* HERO */
+    .main-logo h1 {
+        font-weight: 400;
+        font-size: 5.5rem;
+        margin: 1rem;
+    }
+
+    .main-logo h2 {
+        font-weight: 200;
+        font-size: 3.8rem;
+        margin: 1rem;
+    }
+    
+    .maig-logo img {
+        width: 60px;
+    }
+    
+    .slogan {
+        border: 3px solid;
+        width: 25rem;;
+        margin: auto;
+        font-size: 2rem;
+        padding: 1.5rem;
+    }
+    
+    .hero {
+        background-repeat: no-repeat;
+        background-size: cover;  
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+       
+    /*CONTACT*/
+    h3 {
+       font-size: 2.3rem; 
+    }
+    
+    .contact .far, .fas {
+        font-size: 3rem;
+    }
+    
+    /* PAGE OF CONTACT */
+    .contact-page {
+        background-image: url(https://lufa0001.edumedia.ca/mtm1511/html/img/contact-bg-h.jpg);
+        height: 300px;     
+    }
+    
+    /*FOOTER*/
+    footer img {
+        width: 60px;
+        vertical-align: middle;
+    }
+
+    footer .main-logo h1 {
+        font-weight: 400;
+        font-size: 5rem;
+        margin: 0.5rem;
+    }
+
+    footer .main-logo h2 {
+        font-weight: 200;
+        font-size: 3rem;
+        margin: 1rem;
+    }
+    
+    /*PAGE OF PRODUCTS*/
+    .p-bens {
+        display: flex;
+    }
+}
+/*END OF---RETINA LANDSCAPE TABLETS AND STANDARD DESKTOP*/
+
+/*WIDESCREEN DESKTOP*/
+@media only screen and (min-width: 72.5em) {  
+     
+    header, main {
+        margin: 0 auto;
+        max-width: 1300px;
+    }
+   
+    /*HERO IMG*/
+    .hero {
+        padding: 7%;
+    }
+    
+    /*OUR STORY*/
+    .story {
+        padding: 10rem 5rem; 
+    }
+
+}
