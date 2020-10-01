@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<!--START OF HEAD-->
+<head>
+    <!--Meta tags-->
+    <meta charset="utf-8">
+    <meta name="description" content="Web desing final project">
+    <meta name="author" content="Fiona Yang">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Title-->
+    <title>ONT CAFE</title>
+
+    <!-- Normalize.css-->
+    <link rel="stylesheet" href="https://lufa0001.edumedia.ca/mtm1511/html/css/normalize.css">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap" rel="stylesheet">
+
+    <!--Font Awsome-->
+    <script src="https://kit.fontawesome.com/123c0926b9.js" crossorigin="anonymous"></script>
+
+    <!--My Styles-->
+    <link rel="stylesheet" href="https://lufa0001.edumedia.ca/mtm1511/html/css/styles.css">
+</head>
+<!--END OF HEAD-->
+
+<body>
+   <!--START OF HEADER-->
+    <header>
+      <div class="logo">
+        <a href="https://lufa0001.edumedia.ca/mtm1511/html/index.html">
+            <img src="https://lufa0001.edumedia.ca/mtm1511/html/img/logo-icon.png" alt="one cafe main-logo"><h6>ON<span class="small">E</span> C<span class="small">A</span>FE</h6>
+        </a>
+      </div>
+      <!--START OF NAV-->
+      <nav>
+          <div class="topnav" id="myTopnav">
+              <a href="https://lufa0001.edumedia.ca/mtm1511/html/index.html">Home</a>
+              <a href="https://lufa0001.edumedia.ca/mtm1511/html/product.html">Products</a>
+              <a href="https://lufa0001.edumedia.ca/mtm1511/html/order.html">Service</a>
+              <a href="https://lufa0001.edumedia.ca/mtm1511/html/studio.html">Studio</a>
+              <a href="https://lufa0001.edumedia.ca/mtm1511/html/story.html">Story</a>
+              <a href="https://lufa0001.edumedia.ca/mtm1511/html/contact.html">Contact</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </nav>
+      
+      <!--END OF NAV-->        
+    </header>
+    <!--END OF HEADER--> 
+    
+    <!--START OF MAIN--> 
+    <main class="wrap">
+        <!----START OF PRODUCTS---->
+        <section class="products ser-page">
+                <h3>Order Ahead</h3>
+                
+                <div class="gallery">
+                    <img src="https://lufa0001.edumedia.ca/mtm1511/html/img/service-1.png" alt="coffee eoder">
+                    <div class="price">
+                        <h6>Order Form</h6>
+                    </div>
+                </div>
+                <!-- START of ORDER FORM-->
+                <div class="container">
+                    <form action="thankyou.html">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="youemail@example.com">
+                        
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" name="phone" placeholder="123-123-123">
+                        
+                        <label for="order">Choose your coffee</label>
+                         <select id="order" name="order">
+                          <option value="espresso">Espresso $3.5</option>
+                          <option value="macchiato">Macchiato $2.5</option>
+                          <option value="latte">Latte $3.5</option>
+                        </select>
+
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Please mark your order Numbers and pick up time." style="height:200px"></textarea>
+
+                        <input type="submit" value="Submit Order">
+                    </form>
+                </div>
+                <!-- END of ORDER FORM-->
+
+            
+        </section>
+        <!----END OF PRODUCTS---->
+        
+    </main>
+    <!--END OF MAIN--> 
+    
+    <!--START OF FOOTER-->
+    <footer>
+        <div class="main-logo social">
+            <img src="https://lufa0001.edumedia.ca/mtm1511/html/img/logo-icon.png" alt="one cafe main-logo">
+            <a href="https://lufa0001.edumedia.ca/mtm1511/html/index.html">
+                <h1>ON<span class="small">E</span><br>C<span class="small">A</span>FE</h1>      
+                <h2>ROASTERY</h2>
+            </a>
+            <a href="#"><i class="fab fa-linkedin-in fa-3x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-3x" ></i></a> 
+        </div>
+        <div class="footer">
+            <p>Copyright &copy; 2020 Fiona Yang</p>
+        </div>
+    </footer>
+    <!--END OF FOOTER-->
+    
+    <!--START OF SCRIPTS-->
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>  
+    <!--END OF SCRIPTS-->    
+</body>

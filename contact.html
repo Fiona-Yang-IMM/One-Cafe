@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<!--START OF HEAD-->
+<head>
+    <!--Meta tags-->
+    <meta charset="utf-8">
+    <meta name="description" content="Web desing final project">
+    <meta name="author" content="Fiona Yang">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Title-->
+    <title>ONT CAFE</title>
+
+    <!-- Normalize.css-->
+    <link rel="stylesheet" href="https://lufa0001.edumedia.ca/mtm1511/html/css/normalize.css">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat:wght@200;400;500;700&display=swap" rel="stylesheet">
+
+    <!--Font Awsome-->
+    <script src="https://kit.fontawesome.com/123c0926b9.js" crossorigin="anonymous"></script>
+
+    <!--My Styles-->
+    <link rel="stylesheet" href="https://lufa0001.edumedia.ca/mtm1511/html/css/styles.css">
+</head>
+<!--END OF HEAD-->
+
+<body>
+   <!--START OF HEADER-->
+    <header>
+      <div class="logo">
+        <a href="https://lufa0001.edumedia.ca/mtm1511/html/index.html">
+            <img src="https://lufa0001.edumedia.ca/mtm1511/html/img/logo-icon.png" alt="one cafe main-logo"><h6>ON<span class="small">E</span> C<span class="small">A</span>FE</h6>
+        </a>
+      </div>
+      <!--START OF NAV-->
+      <nav>
+          <div class="topnav" id="myTopnav">
+              <a href="https://lufa0001.edumedia.ca/mtm1511/html/index.html">Home</a>
+              <a href="https://lufa0001.edumedia.ca/mtm1511/html/product.html">Products</a>
+              <a href="https://lufa0001.edumedia.ca/mtm1511/html/order.html">Service</a>
+              <a href="https://lufa0001.edumedia.ca/mtm1511/html/studio.html">Studio</a>
+              <a href="https://lufa0001.edumedia.ca/mtm1511/html/story.html">Story</a>
+              <a href="https://lufa0001.edumedia.ca/mtm1511/html/contact.html">Contact</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+      </nav>
+      
+      <!--END OF NAV-->        
+    </header>
+    <!--END OF HEADER--> 
+    
+    <!--START OF MAIN--> 
+    <main class="wrap">
+        <div class="contact-page"> <!--top imgae-->
+        </div>
+        <article class="content message-form">
+            <h3>Contact Us</h3>
+            <p>We'd love to hear from you! Visit us at one of our locations or email using the form below. You can also give us a call at <span style="font:1.3rem; color:#ee6c4d">800-800-800</span>
+            </p>
+            <!-- START of FORM-->
+                <div class="container">
+                    <form action="thankyou.html">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="youemail@example.com">
+                        
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" name="phone" placeholder="123-123-123">
+
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Leave message" style="height:200px"></textarea>
+
+                        <input type="submit" value="Send Messgae">
+                    </form>
+                </div>
+                <!-- END of FORM-->
+        </article> 
+        
+        <!----START OF CONTACT--->
+        <section class="contact">
+           <div>
+                <i class="fas fa-store fa-4x"></i>
+                <h4>Hours</h4> 
+                <p>Week Days<br>8:00 AM - 5:00 PM<br> Weeked<br>10:00 AM - 7:00 PM </p>
+           </div>
+                <br><hr class="line-1"><br>
+            <div>  
+                <a target="_blank" href="https://goo.gl/maps/FhPSHAuPL4rnEjZh7">      
+                    <i class="fas fa-map-marker-alt fa-4x"></i>
+                    <br>
+                    Shops Location
+                    <br>
+                    Down-town 
+                </a>
+           </div>
+        </section>
+        <!----END OF CONTACT--->
+              
+    </main>
+    <!--END OF MAIN--> 
+    
+    <!--START OF FOOTER-->
+    <footer>
+        <div class="main-logo social">
+            <img src="https://lufa0001.edumedia.ca/mtm1511/html/img/logo-icon.png" alt="one cafe main-logo">
+            <a href="https://lufa0001.edumedia.ca/mtm1511/html/index.html">
+                <h1>ON<span class="small">E</span><br>C<span class="small">A</span>FE</h1>      
+                <h2>ROASTERY</h2>
+            </a>
+            <a href="#"><i class="fab fa-linkedin-in fa-3x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-3x" ></i></a> 
+        </div>
+        <div class="footer">
+            <p>Copyright &copy; 2020 Fiona Yang</p>
+        </div>
+    </footer>
+    <!--END OF FOOTER-->
+    
+    <!--START OF SCRIPTS-->
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>  
+    <!--END OF SCRIPTS-->    
+</body>
