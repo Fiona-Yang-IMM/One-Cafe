@@ -125,7 +125,7 @@ nav {
 /*---Section Hero---*/
 .hero {
     background-color: #689cbb;
-    background-image: linear-gradient(to top, rgba(104,156,187,0), rgba(104,156,187,1)), url(img/hero-bg.jpg);
+    background-image: linear-gradient(to top, rgba(104,156,187,0), rgba(104,156,187,1)), url(../img/hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
