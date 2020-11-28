@@ -125,7 +125,7 @@ nav {
 /*---Section Hero---*/
 .hero {
     background-color: #689cbb;
-    background-image: linear-gradient(to top, rgba(104,156,187,0), rgba(104,156,187,1)), url(https://lufa0001.edumedia.ca/mtm1511/html/img/hero-bg.jpg);
+    background-image: linear-gradient(to top, rgba(104,156,187,0), rgba(104,156,187,1)), url(img/hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -278,7 +278,7 @@ nav {
 
 .intro-studio {
     background-color: #110b0e;
-    background-image: url(https://lufa0001.edumedia.ca/mtm1511/html/img/studio-bg.png);
+    background-image: url(img/studio-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5rem 3rem;
@@ -369,7 +369,7 @@ input[type=submit]:hover {
 /*---Section of Our Story---*/
 .story {
     background-color: #49732f;
-    background-image: linear-gradient(to top, rgba(62,56,36,0), rgba(62,56,36,0.7)),url(https://lufa0001.edumedia.ca/mtm1511/html/img/story-bg.jpg);
+    background-image: linear-gradient(to top, rgba(62,56,36,0), rgba(62,56,36,0.7)),url(img/story-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5rem 3rem;
@@ -423,7 +423,7 @@ input[type=submit]:hover {
 /*==PAGE OF CONTACT==*/
 .contact-page {
     background-color: #60454b;
-    background-image: url(https://lufa0001.edumedia.ca/mtm1511/html/img/contact-bg.jpg);
+    background-image: url(img/contact-bg.jpg);
     background-repeat: no-repeat;
     height: 400px;
     background-size: cover;
@@ -622,7 +622,7 @@ footer a {
     }
     
     .hero {
-        background-image: linear-gradient(to top, rgba(104,156,187,0), rgba(104,156,187,1)), url(https://lufa0001.edumedia.ca/mtm1511/html/img/hero-landscape.jpg);
+        background-image: linear-gradient(to top, rgba(104,156,187,0), rgba(104,156,187,1)), url(img/hero-landscape.jpg);
         background-repeat: no-repeat;
         background-size: cover;  
         display: flex;
@@ -778,7 +778,7 @@ footer a {
     
     /* PAGE OF CONTACT */
     .contact-page {
-        background-image: url(https://lufa0001.edumedia.ca/mtm1511/html/img/contact-bg-h.jpg);
+        background-image: url(img/contact-bg-h.jpg);
         height: 300px;     
     }
     
